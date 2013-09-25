@@ -21,10 +21,10 @@ class users extends CI_Controller {
 	public function index()
 	{
 		//Editar la pagina web 
-		$this->load->view('');
+		$this->load->view('prova');
 	}
 	public function createusers(){
-		$this->load->view('crearusers');
+		echo 'Hola! Crea el teu usuari';
 	}
 	public function deleteusers(){
 		echo "Hola! Elimina el teu usuari";
