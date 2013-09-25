@@ -1,10 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class modify extends CI_Controller {
+class config extends CI_Controller {
 
-	public function modifyusers(){
-		echo "Hola! modifica el teu usuari";
-	}
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,10 +18,17 @@ class modify extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		//Editar la pagina web 
-		$this->load->view('pagina');
+	
+	public function createusers(){
+		$this->load->view('createusers');
+	}
+	public function deleteusers(){
+		
+		$this->load->view('deleteusers');
+	}
+	public function modifyusers(){
+		
+		$this->load->view('modifyusers');
 	}
 }
 

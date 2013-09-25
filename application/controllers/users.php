@@ -18,19 +18,17 @@ class users extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		//Editar la pagina web 
-		$this->load->view('');
-	}
+	
 	public function createusers(){
-		$this->load->view('crearusers');
+		$this->load->view('createusers');
 	}
 	public function deleteusers(){
-		echo "Hola! Elimina el teu usuari";
+		
+		$this->load->view('deleteusers');
 	}
 	public function modifyusers(){
-		echo "Hola! modifica el teu usuari";
+		
+		$this->load->view('modifyusers');
 	}
 }
 
