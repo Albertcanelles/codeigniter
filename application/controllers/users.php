@@ -1,10 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class users extends CI_Controller {
 
-	public function provadephp(){
-		echo "Hola!";
-	}
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -23,7 +21,10 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		//Editar la pagina web 
-		$this->load->view('welcome_message');
+		$this->load->view('pagina');
+	}
+	public function createusers(){
+	echo 'Hola! Crea el teu usuari';
 	}
 }
 

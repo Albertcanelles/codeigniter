@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class delete extends CI_Controller {
 
-	public function provadephp(){
-		echo "Hola!";
+	public function deleteusers(){
+		echo "Hola! Elimina el teu usuari";
 	}
 	/**
 	 * Index Page for this controller.
@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		//Editar la pagina web 
-		$this->load->view('welcome_message');
+		$this->load->view('pagina');
 	}
 }
 
