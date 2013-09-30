@@ -15,11 +15,14 @@
  } );
 </script>
 
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://www.datatables.net/release-datatables/media/css/demo_table.css">
+<link rel="stylesheet" type="text/css" href="http://www.datatables.net/release-datatables/media/css/demo_page.css">
 
 
 </head>
 <body>
-<table border=2 WIDTH=400 id="taula" >
+<table id="taula" class="display" border="1">
 <thead>
         <tr>
             <th>Usuari</th>
@@ -30,7 +33,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>Fila 1 camp 1 </td>
+            <td>Fila 1 camp 1</td>
             <td>Fila 1 camp 2</td>
             <td>Fila 1 camp 3</td>
             <td>Fila 1 camp 4</td>
