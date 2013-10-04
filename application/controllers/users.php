@@ -7,11 +7,11 @@ class users extends CI_Controller {
 		
 		$this->load->view('createusers');
 	}
-	public function deleteusers(){
+	public function deleteusers($id) {
 		
 		$this->load->view('deleteusers');
 	}
-	public function modifyusers(){
+	public function modifyusers($id){
 		
 		$this->load->view('modifyusers');
 	}

@@ -1,5 +1,6 @@
 <html>
 <head>
+
 <!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
  
@@ -19,39 +20,52 @@
 <link rel="stylesheet" type="text/css" href="http://www.datatables.net/release-datatables/media/css/demo_table.css">
 <link rel="stylesheet" type="text/css" href="http://www.datatables.net/release-datatables/media/css/demo_page.css">
 
-
+<t1> Encara no ets membre fes click aqui <a href="createusers"><input type="button" name="boton" value="Registrat"/> </t1></a></br>
 </head>
 <body>
 <table id="taula" class="display" border="1">
 <thead>
         <tr>
+	    <th>id</th>
             <th>Usuari</th>
             <th>Email</th>
             <th>Data naixement</th>
             <th>Banejat</th>
+	    <th>Opcions</th>
+	
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Fila 1 camp 1</td>
-            <td>Fila 1 camp 2</td>
-            <td>Fila 1 camp 3</td>
-            <td>Fila 1 camp 4</td>
+	    <td>1</td>
+            <td>Albert Canyelles</td>
+            <td>albertcanelles@iesebre.com</td>
+            <td>19/03/1993</td>
+            <td>No</td>
+   	    <td><a href="modifyusers/1"><input type="button" name="boton" value="Modificar"/></a>
+	    <a href="deleteusers/1"><input type="button" name="boton" value="Eliminar"/></td></a>	
         </tr>
         <tr>
-            <td>fila 2 camp 1</td>
-            <td>fila 2 camp 2</td>
-            <td>fila 2 camp 3</td>
-            <td>Fila 2 camp 4</td>
+	    <td>2</td>
+            <td>Josep Borrell Sanchez</td>
+            <td>josepborrell@iesebre.com</td>
+            <td>12/09/1993</td>
+            <td>No</td>
+	    <td><a href="modifyusers/2"><input type="button" name="boton" value="Modificar"/></a>
+	    <a href="deleteusers/2"><input type="button" name="boton" value="Eliminar"/></td></a>
         </tr>
         <tr>
-			<td>fila 3 camp 1</td>
-			<td>fila 3 camp 2</td>
-			<td>fila 3 camp 3</td>
-			<td>Fila 3 camp 4</td>
+	    <td>3</td>
+	    <td>Manuel Blanch Garzon</td>
+	    <td>manuelblanch@iesebre.com</td>
+	    <td>25/09/1980</td>
+	    <td>Si</td>
+	    <td><a href="modifyusers/3"><input type="button" name="boton" value="Modificar"/></a>
+	    <a href="deleteusers/3"><input type="button" name="boton" value="Eliminar"/></td></a>
         </tr>
     </tbody>
 </table>
+
 
 </body>
 
