@@ -7,6 +7,8 @@
 </head>
 <body>
 <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
           <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
             <span class="icon-bar"></span>
@@ -23,7 +25,8 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-<h1>Menu</h1>
+    </div>
+
 <ol>
 Usuaris
 <li><a href="http://localhost/codeigniterhelloworld/index.php/users/createusers"> Crea el teu usuari</a></li>
