@@ -78,6 +78,7 @@ Encara no ets membre fes click aqui <a href="createusers"><input type="button" c
 
 <footer>
         <p align="center">&copy; Albert Canelles Panisello</p>
+        <p><?php echo $hello;?></p>
 	</footer>
 </body>
 

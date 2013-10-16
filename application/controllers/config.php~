@@ -19,17 +19,14 @@ class config extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	
-	public function createusers(){
-		$this->load->view('createusers');
+	public function reset(){
+		$this->load->view('resetusers');
 	}
-	public function deleteusers(){
+	public function sortir(){
 		
-		$this->load->view('deleteusers');
+		$this->load->view('exit');
 	}
-	public function modifyusers(){
-		
-		$this->load->view('modifyusers');
-	}
+	
 }
 
 /* End of file welcome.php */

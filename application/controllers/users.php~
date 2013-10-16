@@ -19,6 +19,14 @@ class users extends CI_Controller {
 		
 		$this->load->view('listusers');
 	}
+
+	public function grocery(){
+		$this->load->view('examples');
+	}
+	public function sayhello(){
+		$this->load->view('vista')
+		$this->load->model('say_hello')	
+	}
 }
 
 /* End of file welcome.php */

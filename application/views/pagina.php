@@ -1,9 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-		
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<?php include("bootstrap.txt"); ?>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -19,14 +16,13 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="createusers">Registrat</a></li>
-            <li><a href="createusers">Canvia contrasenya</a></li>
+            <li><a href="resetusers">Canvia contrasenya</a></li>
             <li><a href="modifyusers">Modifica l'usuari</a></li>
           </ul>
         </div>
       </div>
       </div>
 <div>
-</div>
 </br>
 </br>
 </br>
