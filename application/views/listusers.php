@@ -33,52 +33,42 @@
 </br>
 </br>
 Encara no ets membre fes click aqui <a href="createusers"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
-<table id="taula" class="table table-hover table-condensed" border="1">
-<thead>
-        <tr>
-	    <th>id</th>
-            <th>Usuari</th>
-            <th>Email</th>
-            <th>Data naixement</th>
-            <th>Banejat</th>
-	    <th>Opcions</th>
-	
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-	    <td>1</td>
-            <td>Albert Canyelles</td>
-            <td>albertcanelles@iesebre.com</td>
-            <td>19/03/1993</td>
-            <td>No</td>
-   	    <td><a href="modifyusers/1"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="deleteusers/1"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></td></a>	
-        </tr>
-        <tr>
-	    <td>2</td>
-            <td>Josep Borrell Sanchez</td>
-            <td>josepborrell@iesebre.com</td>
-            <td>12/09/1993</td>
-            <td>No</td>
-	    <td><a href="modifyusers/2"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="deleteusers/2"><input type="button" name="boton" class="btn btn-sm btn-danger" value="Eliminar"/></td></a>
-        </tr>
-        <tr>
-	    <td>3</td>
-	    <td>Manuel Blanch Garzon</td>
-	    <td>manuelblanch@iesebre.com</td>
-	    <td>25/09/1980</td>
-	    <td>Si</td>
-	    <td><a href="modifyusers/3"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="deleteusers/3"><input type="button" name="boton" class="btn btn-sm btn-danger" value="Eliminar"/></td></a>
-        </tr>
-    </tbody>
+<table class="table-striped" id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
+                <thead>
+                <tr>
+                        <th><b>ID</b></th>
+                        <th><b>Nom</b></th>
+                        <th><b>Codi Pais </b></th>
+                        <th><b>Districte </b></th>
+                        <th><b>Poblacio </b></th>
+                        <!--<th><b>DNI</b></th>
+                        <th><b>Direccio</b></th>
+                        <th><b>Edad</b></th>
+                        <th><b>Sexe</b></th>-->
+                        <th><b>Accions</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                        <?php 
+                        foreach($query->result() as $index){ 
+                                echo "<tr>";
+                                echo "<td>" .$index ->ID. "</td>";
+                                echo "<td>" .$index-> Name. "</td>";
+                                echo "<td>" .$index-> CountryCode. "</td>";
+                                echo "<td>" .$index-> District. "</td>";
+                                echo "<td>" .$index-> Population. "</td>";
+                                echo "<td>".' <a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>'.
+                        '<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a>'."</td>";
+                        echo "</tr>";}
+                        
+                        ?>        
+                </tbody>
 </table>
 
 <footer>
         <p align="center">&copy; Albert Canelles Panisello</p>
-        <p><?php echo $hello;?></p>
+        <!--<p><?php echo $hello;?></p>-->
+
 	</footer>
 </body>
 
