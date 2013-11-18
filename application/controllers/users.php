@@ -7,9 +7,16 @@ class users extends CI_Controller {
 	   // $this->load->model('Model_hello');
 		$this->load->model('model_user');
 	}
-	
+	public function saveusers(){
+		//this->load->model('insertUser');
+		//$data=this->model_user->insertuser();
+		 $data ['algo'] = $this->model_user->insertUser();
+		 $this->load->view('userok', $data);
+	}
 	public function createusers(){
-		$this->load->view('createusers');
+       	
+       // return $this->db->insert('City', $data);
+        $this->load->view('createusers');
 	}
 
 	public function deleteusers(/*$id*/) {
@@ -18,6 +25,7 @@ class users extends CI_Controller {
 	public function modifyusers(/*$id*/){
 		$this->load->view('modifyusers');
 	}
+
 	public function listusers(){
 		 $users ['query'] = $this->model_user->getUser();
                

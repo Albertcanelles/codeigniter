@@ -28,6 +28,33 @@
 </br>
 </br>
 </br>
+
+      <form method="post" action="saveusers">
+          <table border = "0">
+            <tr>
+              <td>ID:</td>
+              <td><input type="text" name="ID" id="ID"> </td>
+            </tr>
+            <tr>
+             <td>Nom:</td>
+              <td><input type="text" name="Name" id="Name" ></td>
+            </tr>
+            <tr>
+              <td>Codi Pais:</td>
+              <td><input type="text" name="CountryCode" id="CountryCode"> </td>
+            </tr>
+            <tr>
+              <td>Districte:</td>
+              <td><input type="text" name="District" id="District" ></td>
+            </tr>
+            <tr>
+              <td>Num Habitans:</td>
+              <td><input type="text" name="Population" id="Population" ></td>
+            </tr>
+         </table>
+
+         <input type="submit" name="CrearUsuaris" value="Registrat"/>
+        </form>
 </div>
 </body>
 </html>
